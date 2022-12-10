@@ -9,6 +9,7 @@
 		 public function changeAge(){
 			if ($this->age > 18){
 				$this->age= 99; 
+				echo $this->age;
 				
 			} 
 		 }

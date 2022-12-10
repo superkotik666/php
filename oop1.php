@@ -6,10 +6,10 @@
 		public $salary;
 		
 		
-		 public function changeAge($age){
+		 public function changeAge(){
 			if ($this->age > 18){
 				$this->age= 99; 
-				echo $this->age;
+				
 			} 
 		 }
 	}
@@ -20,5 +20,5 @@
 	$user->salary = 1000;
 
 			
-	var_dump ( $user->changeAge($user->age )); 
+	 $user->changeAge(); 
 ?>

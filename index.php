@@ -13,7 +13,7 @@ $host = 'localhost';
 	mysqli_query($link, "SET NAMES 'utf8'");
 
 	$id = $_GET['id'];
-	$query = "SELECT FROM users2 WHERE id=$id";
+	$query = "SELECT * FROM users2 WHERE id=$id";
 	$result= mysqli_query($link, $query) or die(mysqli_error($link));
 	$user2 = mysqli_fetch_assoc($result);
 
